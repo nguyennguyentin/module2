@@ -29,7 +29,7 @@ public class BaiTap2_AddElementsToTheArray {
         }else {
             for (int i = 0; i < array.length; i++) {
                 if(indexElament == i){
-                    for (int j = i; j < array.length ; j++) {
+                    for (int j = array.length-1; j > i ; j--) {
                         array[j]=array[j-1];
                     }
                     array[i]=elament;
